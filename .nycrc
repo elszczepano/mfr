@@ -1,0 +1,17 @@
+{
+	"exclude": [
+		"dist/index.js",
+		"dist/**/*.d.ts"
+	],
+	"include": [
+		"dist/**"
+	],
+	"reporter": [
+		"lcov",
+		"text",
+		"text-summary"
+	],
+	"all": true,
+	"exclude-after-remap": false,
+	"temp-directory": "coverage/.nyc_output"
+}

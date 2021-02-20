@@ -1,1 +1,15 @@
+# IDE files
 .idea
+
+# External packages
+node_modules
+package-lock.json
+
+# Build files
+dist
+dist-tests
+tsconfig.tsbuildinfo
+
+# Tests output
+coverage
+tests/assets/destination-*

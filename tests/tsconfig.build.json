@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.base",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "../dist-tests",
+    "baseUrl": ".",
+    "paths": {
+      "@src": ["../dist/"],
+      "@src/*": ["../dist/*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" }
+    ]
+  },
+  "references": [
+    {
+      "path": "../"
+    }
+  ],
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
