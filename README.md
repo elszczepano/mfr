@@ -108,7 +108,7 @@ const mfr: MFR = new MFR( [], customFileSystem );
 ```
 ## CLI
 
-MFR supports also CLI version. To run mfr in the CLI mode install it first using `npm install -g mfr`.
+MFR supports also the CLI version. To run MFR in the CLI mode install it first using `npm install -g mfr`.
 Then you will be able to run MFR via the `mfr` command:
 
 ```
