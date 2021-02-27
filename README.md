@@ -106,6 +106,26 @@ import customFileSystem from './some-destination';
 
 const mfr: MFR = new MFR( [], customFileSystem );
 ```
+## CLI
+
+MFR supports also CLI version. To run mfr in the CLI mode install it first using `npm install -g mfr`.
+Then you will be able to run MFR via the `mfr` command:
+
+```
+Usage: -m <mode> -s <source> -d <destination>
+
+Options:
+      --help            Show help                                      [boolean]
+      --version         Show version number                            [boolean]
+  -m, --mode            Application mode                     [string] [required]
+  -s, --source          Source path                          [string] [required]
+  -d, --destination     Destiatnion path                     [string] [required]
+  -f, --formats         Handled formats                                  [array]
+  -p, --pattern         Pattern                                         [string]
+  -a, --appendix        Appendix                                        [string]
+      --pre, --prefix   Prefix pattern                                  [string]
+      --pos, --postfix  Prefix patern                                   [string]
+```
 
 ---
 

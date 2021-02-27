@@ -14,6 +14,9 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "nyc ava"
   },
+  "bin": {
+    "mfr": "./dist/bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:elszczepano/mfr.git"
@@ -21,14 +24,18 @@
   "author": "Dominik Szczepaniak",
   "license": "MIT",
   "dependencies": {
-    "uuid": "8.3.2"
+    "chalk": "4.1.0",
+    "uuid": "8.3.2",
+    "yargs": "16.2.0"
   },
   "devDependencies": {
     "@cksource-cs/eslint-config-cs-module": "^2.1.2",
+    "@types/chalk": "2.2.0",
     "@types/node": "12.12.6",
     "@types/rimraf": "3.0.0",
     "@types/sinon": "9.0.10",
     "@types/uuid": "8.3.0",
+    "@types/yargs": "16.0.0",
     "ava": "3.15.0",
     "eslint": "6.6.0",
     "eslint-import-resolver-node": "0.3.4",
