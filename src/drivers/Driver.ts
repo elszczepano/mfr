@@ -52,7 +52,7 @@ export abstract class Driver implements IDriver {
 			return '';
 		}
 
-		return typeof prefixPattern === 'function' ? prefixPattern() : prefixPattern!;
+		return typeof prefixPattern === 'function' ? prefixPattern() : prefixPattern ?? '';
 	}
 
 	protected _getPostfix(): string {
@@ -62,6 +62,6 @@ export abstract class Driver implements IDriver {
 			return '';
 		}
 
-		return typeof postfixPattern === 'function' ? postfixPattern() : postfixPattern!;
+		return typeof postfixPattern === 'function' ? postfixPattern() : postfixPattern ?? '';
 	}
 }
